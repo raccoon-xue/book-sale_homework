@@ -1,0 +1,56 @@
+program name :bookMarketSystem
+date: 2018/01/18
+writer: xue bowen
+
+****************
+*makefile usage:
+****************
+命令行：
+make clean
+make 
+make exe
+
+
+***********
+*exe usage:
+***********
+1. input integer 0 mean that  结帐（羞愧。。。）
+2. 输入书的id（相当于超市扫条码）， 得到货物信息，并累加价钱
+
+
+例子：
+有书  
+编号		价格			新书		常规		滞销
+134 	30.500000 	0	 	1 		0
+168 	19.799999 	1	 	1 		0
+173 	5.000000 	1	 	0 		0
+189 	4.500000 	0	 	0 		1
+192 	19.900000 	0	 	1	 	1
+
+输入：  
+189  192 17 0
+
+输出：
+book_id=189		x1	原价：4.500000		折扣：0.600000		现价：2.700000
+book_id=192		x1	原价：19.900000		折扣：1.000000		现价：19.900000
+Sorry! The book book_id=17 is not found in system.
+books total count:2
+total prices:22.600000
+please input the book id,end with the integer number 0, just like 189 192 ... 0:
+
+或者
+输入： 
+189 回车 192 回车 17 回车 0 回车
+
+结果：
+189
+book_id=189		x1	原价：4.500000		折扣：0.600000		现价：2.700000
+192
+book_id=192		x1	原价：19.900000		折扣：1.000000		现价：19.900000
+17
+Sorry! The book book_id=17 is not found in system.
+0
+books total count:2
+total prices:22.600000
+please input the book id,end with the integer number 0, just like 189 192 ... 0:
+
